@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>HiveMQDenyWildcardPlugin</groupId>
-    <artifactId>HiveMQDenyWildcardPlugin</artifactId>
+    <groupId>com.dcsquare.hivemq.plugin</groupId>
+    <artifactId>deny-wildcard-plugin</artifactId>
     <version>1.0</version>
 
     <description>HiveMQ Plugin to deny top level wildcard subscription</description>

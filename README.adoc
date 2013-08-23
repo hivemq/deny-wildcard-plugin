@@ -1,0 +1,14 @@
+== Deny Wildcard Subscription Plugin
+
+This plugin denies any subscription to the root wildcard topic. In general, root wildcard subscribers tend to be a bottleneck in many scenarios.
+
+Any client who wants to subscribe to the root level wildcard will be disconnected immediately.
+
+=== Installation
+
+1. Copy the jar file to your +<HIVEMQ_HOME>/plugins+ folder
+2. Done
+
+=== Configuration
+
+No configuration needed, works out of the box.

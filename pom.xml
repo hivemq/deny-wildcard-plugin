@@ -11,6 +11,24 @@
 
     <inceptionYear>2013</inceptionYear>
 
+    <organization>
+        <name>dc-square GmbH</name>
+        <url>http://www.dc-square.de</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>flimpoeck</id>
+            <name>Florian Limpöck</name>
+            <email>florian.limpoeck@dc-square.de</email>
+            <organization>dc-square GmbH</organization>
+            <organizationUrl>http://www.dc-square.de</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
 
     <dependencies>
         <dependency>
@@ -110,6 +128,7 @@
             </build>
         </profile>
     </profiles>
+
 
     <repositories>
         <repository>

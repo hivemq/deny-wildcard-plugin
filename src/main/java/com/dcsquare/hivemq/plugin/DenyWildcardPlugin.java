@@ -19,17 +19,22 @@ package com.dcsquare.hivemq.plugin;
 import com.dcsquare.hivemq.plugin.callbacks.DenyWildcardCallback;
 import com.dcsquare.hivemq.spi.PluginEntryPoint;
 import com.dcsquare.hivemq.spi.callback.registry.CallbackRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
 
 public class DenyWildcardPlugin extends PluginEntryPoint {
 
+    private static Logger log = LoggerFactory.getLogger(DenyWildcardPlugin.class);
+
     @PostConstruct
     public void postConstruct() {
 
-        CallbackRegistry callbackRegistry = getCallbackRegistry();
+        final CallbackRegistry callbackRegistry = getCallbackRegistry();
 
         callbackRegistry.addCallback(new DenyWildcardCallback());
 
+        log.warn("Using the Deny Wildcard plugin. Subscribing to '#' is prohibited. All clients who want to subscribe to this topic get disconnected.");
     }
 }

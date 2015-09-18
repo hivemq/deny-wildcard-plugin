@@ -137,7 +137,7 @@
                                     <goal>hivemq</goal>
                                 </goals>
                                 <configuration>
-                                    <hiveMQDir>/Users/flimpoec/Documents/hivemq-3.0.0-Snapshot</hiveMQDir>
+                                    <hiveMQDir>FIXME, insert your HiveMQ directory here!</hiveMQDir>
                                     <debugMode>SERVER</debugMode>
                                 </configuration>
                             </execution>

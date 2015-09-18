@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin.callbacks;
+package com.hivemq.plugin.callbacks;
 
-import com.dcsquare.hivemq.spi.callback.exception.InvalidSubscriptionException;
-import com.dcsquare.hivemq.spi.message.QoS;
-import com.dcsquare.hivemq.spi.message.SUBSCRIBE;
-import com.dcsquare.hivemq.spi.message.Topic;
-import com.dcsquare.hivemq.spi.security.ClientData;
+import com.hivemq.spi.callback.exception.InvalidSubscriptionException;
+import com.hivemq.spi.message.QoS;
+import com.hivemq.spi.message.SUBSCRIBE;
+import com.hivemq.spi.message.Topic;
+import com.hivemq.spi.security.ClientData;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

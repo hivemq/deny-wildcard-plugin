@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 dc-square GmbH
+ * Copyright 2015 dc-square GmbH
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,19 @@
  * limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin;
+package com.hivemq.plugin;
 
-import com.dcsquare.hivemq.plugin.callbacks.DenyWildcardCallback;
-import com.dcsquare.hivemq.spi.PluginEntryPoint;
-import com.dcsquare.hivemq.spi.callback.registry.CallbackRegistry;
+import com.hivemq.plugin.callbacks.DenyWildcardCallback;
+import com.hivemq.spi.PluginEntryPoint;
+import com.hivemq.spi.callback.registry.CallbackRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
 
+/**
+ * @author Florian Limpöck
+ */
 public class DenyWildcardPlugin extends PluginEntryPoint {
 
     private static Logger log = LoggerFactory.getLogger(DenyWildcardPlugin.class);

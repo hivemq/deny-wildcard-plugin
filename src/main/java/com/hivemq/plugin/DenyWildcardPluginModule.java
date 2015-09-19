@@ -23,7 +23,7 @@ import com.hivemq.spi.plugin.meta.Information;
 /**
  * @author Florian Limpöck
  */
-@Information(name = "HiveMQ DenyWildcard Plugin", author = "dc-square GmbH", version = "3.0")
+@Information(name = "HiveMQ DenyWildcard Plugin", author = "dc-square GmbH", version = "3.0.0")
 public class DenyWildcardPluginModule extends HiveMQPluginModule {
 
     @Override

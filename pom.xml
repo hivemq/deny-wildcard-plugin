@@ -19,7 +19,7 @@
 
     <groupId>com.hivemq.plugin</groupId>
     <artifactId>deny-wildcard-plugin</artifactId>
-    <version>3.0</version>
+    <version>3.0.0</version>
 
     <description>HiveMQ Plugin to deny top level wildcard subscription</description>
 

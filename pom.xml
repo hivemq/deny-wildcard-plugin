@@ -13,7 +13,8 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -43,6 +44,11 @@
         </developer>
     </developers>
 
+    <properties>
+        <asciidoctor.version>1.5.2.1</asciidoctor.version>
+        <output.dir>${basedir}</output.dir>
+        <source.document.name>README.adoc</source.document.name>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -50,7 +56,6 @@
             <artifactId>hivemq-spi</artifactId>
             <version>3.0.0</version>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -106,6 +111,34 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>${asciidoctor.version}</version>
+                <executions>
+                    <execution>
+                        <id>output-html</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>html</backend>
+                            <doctype>xhtml</doctype>
+                            <headerFooter>true</headerFooter>
+                            <sourceDirectory>${basedir}</sourceDirectory>
+                            <outputDirectory>${output.dir}/target</outputDirectory>
+                            <sourceDocumentName>${source.document.name}</sourceDocumentName>
+                            <attributes>
+                                <icons>font</icons>
+                                <toc2/>
+                            </attributes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 

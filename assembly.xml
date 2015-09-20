@@ -23,7 +23,7 @@
     </formats>
     <files>
         <file>
-            <source>README.adoc</source>
+            <source>target/README.html</source>
             <outputDirectory>/</outputDirectory>
         </file>
         <file>

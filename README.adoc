@@ -16,3 +16,12 @@ Any client who wants to subscribe to the root level wildcard will be disconnecte
 === Configuration
 
 No configuration needed, works out of the box.
+
+= Contributing
+
+If you want to contribute to HiveMQ Deny Wildcard Plugin, see the link:CONTRIBUTING.md[contribution guidelines].
+
+= License
+
+HiveMQ Deny Wildcard Plugin is licensed under the `APACHE LICENSE, VERSION 2.0`. A copy of the license can be found link:LICENSE.txt[here].
+
